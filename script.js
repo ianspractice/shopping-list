@@ -22,3 +22,9 @@ function addItem() {
   });
   input.focus();
 }
+
+input.addEventListener("keypress", function (e) {
+  if (e.key === "Enter") {
+    addItem();
+  }
+});
